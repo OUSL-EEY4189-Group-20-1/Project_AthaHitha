@@ -249,7 +249,7 @@
             <section style="background-color: white;">
                 <div class="section2">
                     <div class="textArea reveal" style="margin-bottom: 2vw; margin-left:0.5%; margin-right:0.5%;">
-                        <p class="text-center fs-2">There are around <span><button style="background-color: #269f61; color:white; border:none; border-radius:10px;">2.5 million</button></span> people are suffering from some form of poverty or near poverty in Sri Lanka.</p>
+                        <p class="text-center fs-2">There are around <span><button style="background-color: #269f61; color:white; border:none; border-radius:10px; padding-left:0.5%; padding-right:0.5%;">2.5 million</button></span> people are suffering from some form of poverty or near poverty in Sri Lanka.</p>
                         <p class="text-center fs-5">
                         Poverty remains a significant issue in Sri Lanka, with a large portion of the population living on less than five dollars a day.
                         In 2019, 14.3 percent of the population lived below the national poverty line. According to the Asian Development Bank, in Sri Lanka, 14.3% of the population lived below the national poverty line in 20191. The poverty rate in Sri Lanka was 4% in 20211. The proportion of employed population below $1.90 purchasing power parity/day in 2022 was 0.4%.
@@ -290,9 +290,9 @@
                             </li>
                             <li class="card">
                                 <div class="card-n">
-                                    <img src="{{ asset('resFiles/seminar.jpg') }}" class="card-img-top" alt="...">
+                                    <img src="{{ asset('resFiles/awareness.jpg') }}" class="card-img-top" alt="...">
                                     <div class="card-body" style="background-color:#334444; border:none; text-align:center;">
-                                        <h5 class="card-title" style="color: white; text-align:center;">G.C.E O/L Support Seminar Program</h5>
+                                        <h5 class="card-title" style="color: white; text-align:center;">Health Awareness Seminar Program</h5>
                                         <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
                                         <a href="#" class="btn btn-primary" style="align-items: center; text-align:center; background-color:#269f61; border:none;">Contribute</a>
                                     </div>
@@ -300,9 +300,9 @@
                             </li>
                             <li class="card">
                                 <div class="card-n" >
-                                    <img src="{{ asset('resFiles/seminar.jpg') }}" class="card-img-top" alt="...">
+                                    <img src="{{ asset('resFiles/foodDonate.jpeg') }}" class="card-img-top" alt="...">
                                     <div class="card-body" style="background-color:#334444; border:none; text-align:center;">
-                                        <h5 class="card-title" style="color: white; text-align:center;">G.C.E O/L Support Seminar Program</h5>
+                                        <h5 class="card-title" style="color: white; text-align:center;">Dry Food Donation Program</h5>
                                         <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
                                         <a href="#" class="btn btn-primary" style="align-items: center; text-align:center; background-color:#269f61; border:none;">Contribute</a>
                                     </div>
@@ -310,9 +310,9 @@
                             </li>
                             <li class="card">
                                 <div class="card-n">
-                                    <img src="{{ asset('resFiles/seminar.jpg') }}" class="card-img-top" alt="...">
+                                    <img src="{{ asset('resFiles/schoolGirl.jpg') }}" class="card-img-top" alt="...">
                                     <div class="card-body" style="background-color:#334444; border:none; text-align:center;">
-                                        <h5 class="card-title" style="color: white; text-align:center;">G.C.E O/L Support Seminar Program</h5>
+                                        <h5 class="card-title" style="color: white; text-align:center;">Rural Education Upliftment Program</h5>
                                         <!--p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p-->
                                         <a href="#" class="btn btn-primary" style="align-items: center; text-align:center; background-color:#269f61; border:none;">Contribute</a>
                                     </div>
@@ -448,7 +448,7 @@
                                     <p id="our-projects" style="font-size: 3vw; text-align:center; color:white;">OUR PROJECTS</p>
                                     <p id="countdown1" class="countdown1" style="color: #269f61; font-size:5vw">0</p>
                                     <p style="color: white; font-size:2vw">Completed Projects</p>
-                                    <button id="logins" style="width:60%;">JOIN WITH US</button>
+                                    <button id="logins" style="width: 90%; font-size:80%; margin-bottom:2vh;">JOIN WITH US</button>
                                 </div>
                             </div>
                         </div>

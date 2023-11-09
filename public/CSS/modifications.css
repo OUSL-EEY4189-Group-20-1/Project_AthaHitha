@@ -90,7 +90,7 @@
     cursor: pointer;
 }
 #logins{
-    width: 20%;
+    width: 50%;
     margin: auto;
     padding: 10px 0;
     margin-top:1% ;
@@ -750,6 +750,8 @@ span{
     background-color: rgb(50, 67, 50);
     align-items: center;
 }
+
+
 .left{
     position: static;
     margin-left: 6vh;
@@ -1082,7 +1084,6 @@ footer {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
-    border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
     }
@@ -1107,14 +1108,14 @@ footer {
     }
     .carousel .card {
     scroll-snap-align: start;
-    height: 342px;
+    height: 450px;
     list-style: none;
-    background: #fff;
+    background: #E6FFE6;
+    border-color: #E6FFE6;
     cursor: pointer;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 10px;
     }
-
     @media screen and (max-width: 900px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
@@ -1125,5 +1126,17 @@ footer {
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }
+    .carousel img{
+        max-height: 70%;
     }
+    }
+
+    /*.carousel img{
+        height: 280px;
+        width: 450px;
+    }*/
+    /*.carousel .card{
+        height: auto;
+        max-width: 100%;
+    }*/
 
