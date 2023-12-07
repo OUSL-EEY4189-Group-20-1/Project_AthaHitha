@@ -1,0 +1,311 @@
+body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background: #EEE;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.main-banner {
+    background-color: #000;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.main-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 575px;
+    height: 274px;
+    margin: 26px;
+    border-radius: 30px;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.card-image {
+    background-color: black;
+    height: 274px;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+    background-size: cover;
+}
+
+.card-body1 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 275px;
+    width: 300px;
+    background: #F7F7F7;
+    border-radius: 10px;
+
+}
+
+.card-body1 a {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+.card-ico {
+    background: #F7F7F7;
+    margin-top: 23px;
+    width: 63px;
+    height: 63px;
+}
+
+.car-1 {
+    background-image: url(theharrisfoundation4.jpg);
+}
+
+.card-body1 h2 {
+    background: #F7F7F7;
+    color: #099BBB;
+    text-align: center;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+.card-body1 p {
+    background: #F7F7F7;
+    margin: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.explor-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 25px;
+    border-radius: 6px;
+
+}
+
+.explor-btn1 {
+    margin-bottom: 21px;
+    background-color: #f6f6f6;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.42px;
+}
+
+.desciption-container {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.mission-container {
+    background: #41A974;
+    width: 35%;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    background: #ffffff;
+    width: 65%;
+    height: 365px;
+}
+
+.mission-container img {
+    width: 76px;
+    height: 76px;
+    margin-top: 39px;
+
+}
+
+.mission-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px 54px 4px 54px;
+}
+
+.mission-container h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-ico {
+    margin-top: 21px;
+    width: 63px;
+    height: 63px;
+}
+
+.projects-container h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.project-card {
+    margin: 16px;
+    display: flex;
+    width: 137px;
+    height: 192px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project-card-animation{
+    animation: fade-in 0.5s ease 3s;
+    animation: fade-in ease 1s;
+}
+
+.card1 {
+    background: #099BBB;
+}
+
+.card2 {
+    background: #DB4437;
+}
+
+.card3 {
+    background: #F4B400;
+}
+
+.card4 {
+    background: #4285F4;
+}
+
+
+.project-card h4 {
+    margin: 10px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project-card h5 {
+    margin: 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media (max-width: 1025px) {
+    .projects-container {
+        visibility: hidden;
+    }
+
+    .mission-container {
+        width: 100%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}

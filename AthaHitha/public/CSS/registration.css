@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Verdana (sans-serif)", "Arial Narrow", Arial, sans-serif;
+  color: #222;
+}
+
+.main {
+  background: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
+    no-repeat bottom center;
+  height: 90vh;
+  background-size: cover;
+  color: white;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.main .transparentbox {
+  width: 600px;
+  height: 700px;
+  float: left;
+  margin: 100px 100px;
+  border-radius: 20px;
+  background-color: rgba(7, 1, 1, 0.6);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.main .transparentbox .blackbox {
+  background-color: #334444;
+  width: 520px;
+  height: 600px;
+  margin: 50px 41px;
+  margin-top: 5px;
+  border-radius: 20px;
+  opacity: 0.9;
+  padding: 10px;
+  padding-top: 25px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.main .transparentbox h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.main .transparentbox .colored-word {
+  color: #0a954e;
+  font-size: 64px;
+}
+
+.main .transparentbox .blackbox .inputs {
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.main .transparentbox .blackbox input {
+  border-radius: 10px;
+  background-color: transparent;
+  border-bottom: 2px solid #0a954e;
+  /* border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 200px;
+  height: 30px;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.main .transparentbox .blackbox #organizationinput {
+  width: 300px;
+  border-radius: none;
+  margin-right: 150px;
+  margin-bottom: 15px;
+}
+.main .transparentbox .blackbox input:hover {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+.main .transparentbox .blackbox input:focus {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.main .transparentbox .blackbox h6 label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 12px;
+  margin-right: 50px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.main .transparentbox .blackbox h6 input[type="checkbox"] {
+  transform: scale(0.5);
+  margin-right: -50px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main .transparentbox .blackbox .signupbtn {
+  background-color: white;
+  color: #0a954e;
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.main .transparentbox .blackbox .signupbtn:hover {
+  background-color: #0a954e;
+  color: white;
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+}
+
+.main .transparentbox .blackbox .signupbtn:active {
+  background-color: #0a954e;
+  color: black;
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+}
+h4 {
+  text-align: center;
+  margin-top: 4px;
+  font-weight: 200;
+}
+.bottom a {
+  color: #0a954e;
+  text-decoration: none;
+}
+.bottom a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
