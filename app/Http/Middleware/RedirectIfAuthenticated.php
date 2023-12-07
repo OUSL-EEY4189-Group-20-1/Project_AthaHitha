@@ -19,9 +19,20 @@ class RedirectIfAuthenticated
     {
         $guards = empty($guards) ? [null] : $guards;
 
-        foreach ($guards as $guard) {
+        /*foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
                 return redirect(RouteServiceProvider::HOME);
+            }
+        }*/
+        foreach ($guards as $guard) {
+            if (Auth::guard($guard)->check()) {
+                // Check if the user has just registered
+                if ($request->session()->has('just_registered')) {
+                    // Clear the session variable
+                    $request->session()->forget('just_registered');
+                } else {
+                    return redirect(RouteServiceProvider::HOME);
+                }
             }
         }
 
