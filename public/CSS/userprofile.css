@@ -1,0 +1,750 @@
+/* Navigation bar */
+
+.nav-link {
+    color: #269f61;
+    font-size: x-large;
+    font-weight: 420;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    text-align: center;
+    position: relative;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #269f6159;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Top Banner */
+/* Container for the background image */
+.background {
+    position: relative;
+    width: 100%;
+    max-height: 330px;
+}
+
+/* Background image */
+.background img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Centered image */
+.profile-image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+    width: 14%;
+    height: auto;
+    max-width: 100%;
+    transition: 0.3s;
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.camera-icon {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 3%;
+    font-size: 170%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 80%;
+}
+
+.camera-icon:hover {
+    transform: translate(50%, -50%) scale(1.1);
+}
+
+
+
+/* Cropper Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.cropper-container {
+    width: 100%;
+    max-height: 400px; 
+    overflow: hidden;
+}
+
+#cropper-image {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* below profile pic */
+.hello {
+    color: #0A954E;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.help_sent {
+    text-align: center;
+    color: black;
+}
+  
+#basicInfo {
+    padding: 2% 5%;
+    border: 2px solid #000000;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+#basicInfo svg{
+    cursor: pointer;
+}
+
+.BasicInfo {
+    color: #0A954E;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+#basicInfo p {
+    margin-left: 30px;
+    font-size: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#basicInfo p strong {
+    margin-right: 30px;
+    font-size: 100%;
+}
+
+#labelname,
+#labelemail,
+#labelphone,
+#labeladdress {
+    margin-left: 40px;
+    font-size: 100%;
+}
+.name-div, .email-div, .phone-div, .address-div{
+    display: flex;
+    justify-content: space-between;
+}
+.name-change, .email-change, .phone-change, .address-change{
+    cursor: pointer;
+    color: rgb(24, 140, 134);
+    font-size: 100%;
+}
+
+
+#infoname::after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
+#infoemail::after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
+#infoaddress::after {
+    content: "\00a0\00a0\00a0";
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.dialog-content{
+    padding: 5%;
+    border: #aaa solid 2px;
+}
+#editmessage{
+    display: none;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#editField{
+    margin-top: 4%;
+    padding: 2%;
+    width: 100%;
+}
+#savebutton{
+    margin-top: 5%;
+    border-radius: 10%;
+    font-size: 120%;
+    background-color: #0A954E;
+    font-weight: 600;
+    color: #ffffff;
+}
+#savebutton:hover{
+    background-color: #ffffff;
+    color: #0A954E;
+    border: #0A954E solid 2px;
+    
+}
+/* Existing CSS styles */
+#savebutton.no-hover {
+    pointer-events: none; 
+    background-color: #ccc; 
+  }
+  
+  #savebutton.no-hover:hover {
+    background-color: #ccc; 
+  }
+  
+  #savebutton.no-hover:focus {
+    outline: none; 
+  }
+
+#secondDialog{
+    display: none;
+}
+.secondDialog{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    
+}
+.seconddialog-content{
+    width: 300px;
+    height: auto;
+    padding: 5% 5%;
+    background-color: #fff;
+    border: #aaa solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transform: scale(1.6)
+}
+.seconddialog-content h4{
+    font-size: 20px;
+    color: #121212;
+    font-family: sans-serif;
+}
+.seconddialog-content p{
+    font-size: 60%;
+    text-align: center;
+}
+.seconddialog-content form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.seconddialog-content form .input_fields{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.seconddialog-content form .input_fields input{
+    max-width: 20%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background: #f0f0f0;
+    font-size: 25px;
+}
+.seconddialog-content form .input_fields input::-webkit-inner-spin-button,
+.seconddialog-content form .input_fields input::-webkit-outer-spin-button{
+    display: none;
+}
+.seconddialog-content form .input_fields input:focus{
+    outline: 3px solid #00b991;
+    outline-offset: 2px;
+}
+.verifyclose{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 90%;
+    margin-top: 0%;
+    cursor: pointer;
+
+}
+
+.seconddialog-content form button{
+    margin-top: 25px;
+    width: 92%;
+    background: #a9b2ae;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.seconddialog-content form button.active{
+    background: #0A954E;
+    pointer-events: auto;
+    color: #ffffff;
+}
+
+.seconddialog-content form button:hover{
+    background: #06b65b;
+}
+
+
+/* Your Donations and Your Volunteer Activities */
+.donate_volunteer {
+    display: flex;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+/* Your Donations */
+.scroll-box-donations {
+    height: 500px;
+    width: 50%;
+    border: 2px solid #000;
+    overflow: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.scroll-box-donations h2 {
+    color: #0A954E;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.donations_done {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin: 2% 3% 1% 3%;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 130%;
+    /* display: none; */
+}
+
+.donations_done p {
+    margin-top: 15px;
+}
+
+.donated_amount {
+    border: #0A954E solid 2px;
+    padding: 0% 2% 0% 2%;
+    color: #0A954E;
+    width: 25%;
+    text-align: center;
+}
+
+.date {
+    display: flex;
+}
+
+/* Your Volunteer Activities */
+.scroll-box-volunteer {
+    height: 500px;
+    width: 50%;
+    border: 2px solid #000;
+    overflow: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.scroll-box-volunteer h2 {
+    color: #0A954E;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.donations_done_smallscreen{
+    display: none;
+}
+
+.popup-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive css */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .camera-icon {
+        margin-left: 52%;
+        font-size: 100%;
+        width: 30px;
+        height: 30px;
+    }
+
+    .dialog {
+        width: 60%;
+    }
+    
+
+    .scroll-box-donations{
+        padding: 2%;
+    }
+
+    .scroll-box-donations h2,
+    .scroll-box-volunteer h2 {
+        color: #0A954E;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+    }
+    .donations_done_smallscreen{
+        display: flex;
+        padding: 3%;
+        background-color: #D9D9D9;
+    }
+    .donations_done_smallscreen div{
+        padding: 2px;
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+    }
+    .view-details-btn{
+        background-color: #0A954E;
+        color: #ffffff;
+        margin-left: 5px;
+        font-size: 13px;
+        width:50%;
+        height: 30px;
+        font-weight: bold;
+        padding-top: 1%;
+        border: #0A954E solid 2px;
+    }
+    .view-details-btn:hover{
+        background-color: #ffffff;
+        color: #0A954E;
+    }
+
+    .donations_done {
+        display: none;
+    }
+
+    .view-details-btn {
+        cursor: pointer;
+    }
+    
+    .popup-dialog {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: #0A954E solid 3px;
+        border-radius: 10px;
+        width: 50%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    .popup-content {
+        margin: 0%;
+    }
+    
+    .close-btn {
+        cursor: pointer;
+        width: 25%;
+        padding: 1%;
+        background-color: #0A954E;
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 38%;
+    }
+
+}
+
+
+
+
+
+
+@media (min-width: 450px) and (max-width:768px) {
+    .background {
+        max-height: 500px;
+        padding-top: 50px;
+    }
+
+    .camera-icon {
+        margin-left: 51%;
+        font-size: 100%;
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .hello {
+        margin-top: 60px;
+    }
+    .name-change, .email-change, .phone-change, .address-change {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+      }
+    
+      .name-change svg, .email-change svg, .phone-change svg, .address-change svg {
+        display: block; 
+      }
+    
+      .name-change span, .email-change span, .phone-change span, .address-change span {
+        display: none; 
+      }
+
+      .dialog {
+        padding: 20px;
+        width: 90%;
+    }
+    
+    .dialog-content{
+        padding: 5%;
+        border: #aaa solid 2px;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-right: 2%;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #editField{
+        margin-top: 4%;
+        padding: 2%;
+        width: 100%;
+    }
+    #savebutton{
+        border-radius: 5%;
+        font-size: 80%;
+    }
+      .donate_volunteer{
+        display: block;
+      }
+
+    .scroll-box-donations,
+    .scroll-box-volunteer {
+        height: 400px;
+        width: 90%;
+        margin-top: 10%;
+        padding: 0% 8%;
+
+    }
+
+    .scroll-box-donations h2,
+    .scroll-box-volunteer h2 {
+        color: #0A954E;
+        margin-left: 1%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .donations_done_smallscreen{
+        display: flex;
+        padding: 3%;
+        background-color: #D9D9D9;
+        border-radius: 5%;
+    }
+    .donations_done_smallscreen div{
+        padding: 2px;
+        width: 50%;
+        height: 30px;
+        font-size: 15px;
+    }
+    .view-details-btn{
+        background-color: #0A954E;
+        color: #ffffff;
+        margin-left: 5px;
+        font-size: 13px;
+        width:50%;
+        height: 30px;
+        padding-top: 1%;
+        font-weight: bold;
+        border: #0A954E solid 2px;
+        cursor: pointer;
+    }
+    .view-details-btn:hover{
+        background-color: #ffffff;
+        color: #0A954E;
+    }
+
+    .donations_done {
+        display: none;
+    }
+
+    .popup-dialog {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: #0A954E solid 3px;
+        border-radius: 10px;
+        width: 50%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .popup-content {
+        margin: 0%;
+    }
+
+    .close-btn {
+        cursor: pointer;
+        width: 40%;
+        padding: 2%;
+        background-color: #0A954E;
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 32%;
+    }
+    .close-btn:hover {
+        background-color: #ffffff;
+        color: #0A954E;
+        border: #0A954E solid 3px;
+    }
+
+    
+    .seconddialog-content{
+        width: 200px;
+    }
+    .seconddialog-content h4{
+        font-size: 15px;
+    }
+    .seconddialog-content p{
+        font-size: 55%;
+    }
+    .seconddialog-content form .input_fields input{
+        height: 40px;
+        font-size: 20px;
+    }
+    .verifyclose{
+        font-size: 15px;
+    }
+    .seconddialog-content form button{
+        width: 52%;
+        font-size: 13px;
+    }
+    
+
+}
+
+
+
+

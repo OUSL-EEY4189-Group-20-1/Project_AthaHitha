@@ -1,0 +1,327 @@
+/* Navigation bar */
+
+.nav-link {
+    color: #269f61;
+    font-size: x-large;
+    font-weight: 420;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    text-align: center;
+    position: relative;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #269f6159;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+/* Background Image */
+.background_image {
+    margin-top: 70px;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.heading {
+    z-index: 1;
+    color: #0A954E;
+    font-weight: 700;
+    padding-top: 30px;
+    margin-left: 230px;
+} 
+
+.first_box {
+    background-color: #e3ffe3;
+    padding: 20px;
+    margin-left: 50px;
+    width: 600px;
+    border-radius: 2px;
+    box-shadow: 3px 3px #808484;
+}
+
+.second_box {
+    background-color: #637171;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box_heading {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form */
+.name {
+    margin-top: 50px;
+    width: 450px;
+}
+
+.email,
+.help {
+    width: 450px;
+    margin-top: 10px;
+}
+
+.message {
+    width: 450px;
+    margin-top: 10px;
+}
+
+.send {
+    color: #0A954E;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 40px;
+    box-shadow: 0 3px #808484;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.send:hover {
+    color: #ffffff;
+    background-color: #0A954E;
+    border: none;
+}
+
+
+.custom-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    background: #FFFFFF;
+    color: #000000;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#closeDialog {
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 70px;
+    background: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+}
+
+
+/* Address and other information */
+.address,
+.phone,
+.emailaddress {
+    margin-top: 20px;
+    margin-left: 80px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.address_line,
+.phone_line,
+.email_line {
+    margin-left: 80px;
+}
+
+/* Frequently asked questions */
+.Fre_questions {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.column1 {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+}
+
+.column2 {
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 20px;
+    float: left;
+}
+
+.end {
+    height: 100px;
+    margin-left: 700px;
+    margin-top: 50px;
+}
+
+/* Responsive css */
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .heading {
+        padding-top: 30px;
+        margin-left: 180px;
+        font-size: 28px;
+    }
+
+    .first_box {
+        padding: 20px;
+        margin-left: 20px;
+        width: 500px;
+    }
+
+    .name {
+        margin-top: 50px;
+        width: 350px;
+    }
+
+    .email,
+    .help {
+        width: 350px;
+        margin-top: 10px;
+    }
+
+    .message {
+        width: 350px;
+        margin-top: 10px;
+    }
+
+    .box_heading {
+        margin-top: 20px;
+    }
+    .send {
+        padding: 3px 30px;
+    }
+
+    .address,
+    .address_line,
+    .phone,
+    .phone_line,
+    .emailaddress,
+    .email_line {
+        margin-left: 30px;
+    }
+
+    .column2,
+    .column1 {
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .heading {
+        padding-top: 30px;
+        margin-left: 130px;
+        font-size: 28px;
+        filter: brightness(80%);
+    }
+
+    .background_image {
+        filter: brightness(120%);
+    }
+
+    .first_box {
+        padding: 20px;
+        margin-left: 13px;
+        width: 400px;
+    }
+
+    .name {
+        margin-top: 50px;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .email,
+    .help {
+        width: 250px;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .message {
+        width: 250px;
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .send {
+        padding: 3px 30px;
+        filter: brightness(80%);
+    }
+
+    .box_heading {
+        margin-top: 20px;
+    }
+
+    .first_box {
+        background-color: #bdfcbd;
+        box-shadow: 3px 3px #808484;
+    }
+
+    .second_box {
+        background-color: #535a5a;
+    }
+
+    .address,
+    .phone,
+    .emailaddress {
+        margin-left: 20px;
+    }
+
+    .address_line,
+    .phone_line,
+    .email_line {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .column2,
+    .column1 {
+        width: 90%;
+        margin-left: 10px;
+    }
+}
